@@ -48,18 +48,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
-                android:text="Nome!"
+                android:text="Nome"
                 android:textColor="#F0FFFFFF"
                 android:textSize="24dp"
                 android:textStyle="italic"></TextView>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="casual"
                 android:text="!"
                 android:textColor="#F0FFFFFF"
-                android:textStyle="italic"
                 android:textSize="24dp"
-                ></TextView>
+                android:textStyle="italic"></TextView>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/layout_cibi"
@@ -77,9 +78,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fabbisogno calorio giornaliero"
+            android:text="Fabbisogno calorico giornaliero"
             android:textColor="#fff"
-            android:textSize="18dp"
+            android:textSize="17dp"
             android:layout_gravity="center"
             android:textStyle="bold"
             ></TextView>
@@ -480,6 +481,7 @@
                     android:layout_marginTop="40dp"
                     android:layout_width="80dp"
                     android:layout_height="60dp"
+                    android:layout_marginLeft="5dp"
                     android:padding="3dp"
                     android:background="@drawable/btn_rounded_corner"
                     android:src="@mipmap/tapis_roulant"

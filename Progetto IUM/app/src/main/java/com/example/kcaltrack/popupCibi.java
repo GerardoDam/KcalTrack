@@ -108,7 +108,7 @@ public class popupCibi extends Activity {
             @Override
             public void onClick(View v) {
                 int gr = 0;
-            if(String.valueOf(input_gr.getText()).equalsIgnoreCase("")){
+            if(String.valueOf(input_gr.getText()).equalsIgnoreCase("")||String.valueOf(input_gr.getText()).equalsIgnoreCase("Inserisci gr...") ){
                 Toast toast = Toast.makeText(popupCibi.this, "Inserisci la quantità di grammi!",
                         Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.TOP,0,600);
@@ -351,6 +351,8 @@ public class popupCibi extends Activity {
                         Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.TOP,0,600);
                 toast.show();
+                adapterCibi.notifyDataSetChanged();
+                gridCibi.setAdapter(adapterCibi);
                 aggiungi.setVisibility(View.INVISIBLE);
                 inserisci.setVisibility(View.INVISIBLE);
                 creazione_cibi.setVisibility(View.INVISIBLE);

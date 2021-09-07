@@ -119,6 +119,8 @@ import java.util.ArrayList;
                             Toast.LENGTH_SHORT);
                     toast.setGravity(Gravity.TOP,0,600);
                     toast.show();
+                    adapterEse.notifyDataSetChanged();
+                    gridEse.setAdapter(adapterEse);
                     aggiungi.setVisibility(View.INVISIBLE);
                     inserisci.setVisibility(View.INVISIBLE);
                     creazione_ese.setVisibility(View.INVISIBLE);
@@ -130,7 +132,7 @@ import java.util.ArrayList;
                 @Override
                 public void onClick(View v) {
                     int time = 0;
-                    if(String.valueOf(input_time.getText()).equalsIgnoreCase("")){
+                    if(String.valueOf(input_time.getText()).equalsIgnoreCase("")||String.valueOf(input_time.getText()).equalsIgnoreCase("Inserisci minuti...")){
                         Toast toast = Toast.makeText(com.example.kcaltrack.popupEse.this, "Inserisci il tempo in minuti!",
                                 Toast.LENGTH_SHORT);
                         toast.setGravity(Gravity.TOP,0,600);

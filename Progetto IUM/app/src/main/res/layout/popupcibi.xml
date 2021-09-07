@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:menuxmlns="http://schemas.android.com/tools">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_backgroundpupup"
+            >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="3dp"
+                    >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:orientation="horizontal"
+
+                            >
+                                <Button
+                                    android:id="@+id/btn_CreaAlimento"
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/btn_rounded_corner"
+                                    android:text="Crea alimento"
+                                    android:layout_marginBottom="5dp"
+                                    android:textColor="#fff"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_alignParentBottom="true"
+                                    ></Button>
+                                <Button
+                                    android:id="@+id/btn_aggiungiInPopupCibo"
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/btn_rounded_corner"
+                                    android:text="Aggiungi"
+                                    android:textColor="#fff"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="202dp"
+                                    android:layout_alignParentBottom="true"
+                                    ></Button>
+                                <Button
+                                    android:id="@+id/btn_InserisciinPopCibo"
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/btn_rounded_corner"
+                                    android:text="inserisci"
+                                    android:textColor="#fff"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="202dp"
+                                    android:layout_alignParentBottom="true"
+                                    ></Button>
+                                // LAYOUT INSERIMENTO CIBOOOO  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                <LinearLayout
+                                    android:visibility="visible"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop= "20dp"
+                                    android:layout_width="345dp"
+                                    android:background="@drawable/rounded_corner2"
+                                    android:layout_height="225dp"
+                                    android:orientation="vertical"
+                                    >
+                                        // layout visibile invisibile inserimento cibo @@@@@@@
+                                        <LinearLayout
+                                            android:id="@+id/ll_Inserimento_cibo"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:visibility="invisible">
+                                <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                        <ImageView
+                                            android:id="@+id/icona_cibo"
+                                            android:layout_marginTop="25dp"
+                                            android:layout_width="100dp"
+                                            android:layout_height="100dp"
+                                            android:layout_marginLeft="20dp"
+                                            android:src="@drawable/mela"></ImageView>
+
+                                        <LinearLayout
+                                            android:layout_width="200dp"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:layout_marginLeft="8dp">
+                                                <TextView
+                                                    android:id="@+id/nome_alimento"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Mela"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:textSize="18dp"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#fff"></TextView>
+                                                <TextView
+                                                    android:layout_width="190dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Valori nutrizionali per 100g:"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:textSize="14dp"
+                                                    android:textStyle="bold"
+                                                    android:textColor="#fff"></TextView>
+                                                <LinearLayout
+                                                    android:layout_width="189dp"
+                                                    android:layout_height="20dp"
+                                                    android:layout_marginTop="5dp">
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="Calorie:  "
+                                                            android:layout_marginLeft="5dp"
+                                                            android:textSize="14dp"
+                                                            android:textStyle="bold"
+                                                            android:textColor="#fff"
+                                                            android:layout_gravity="start"></TextView>
+                                                        <TextView
+                                                            android:id="@+id/kcal_alimento"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="300"
+                                                            android:textSize="14dp"
+                                                            android:textStyle="bold"
+                                                            android:gravity="end"
+                                                            android:layout_marginLeft="35dp"
+                                                            android:textColor="#fff"></TextView>
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text=" kcal"
+                                                            android:textSize="14dp"
+                                                            android:textStyle="bold"
+                                                            android:textColor="#fff"></TextView>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_width="189dp"
+                                                    android:layout_height="20dp"
+                                                    android:layout_marginTop="5dp">
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="Proteine:  "
+                                                            android:layout_marginLeft="5dp"
+                                                            android:textSize="14dp"
+                                                            android:textStyle="bold"
+                                                            android:textColor="#fff"></TextView>
+                                                        <TextView
+                                                            android:id="@+id/proteine_alimento"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="2"
+                                                            android:layout_marginLeft="27dp"
+                                                            android:textSize="14dp"
+                                                            android:textStyle="bold"
+                                                            android:textColor="#fff"></TextView>
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text=" gr"
+                                                            android:textSize="14dp"
+                                                            android:textStyle="bold"
+                                                            android:textColor="#fff"></TextView>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_width="189dp"
+                                                    android:layout_height="20dp"
+                                                    android:layout_marginTop="5dp">
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="Carboidrati:  "
+                                                            android:layout_marginLeft="5dp"
+                                                            android:textSize="14dp"
+                                                            android:textStyle="bold"
+                                                            android:textColor="#fff"></TextView>
+                                                        <TextView
+                                                            android:id="@+id/carbo_alimento"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="10"
+                                                            android:layout_marginLeft="8dp"
+                                                            android:textSize="14dp"
+                                                            android:textStyle="bold"
+                                                            android:textColor="#fff"></TextView>
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text=" gr"
+                                                            android:textSize="14dp"
+                                                            android:textStyle="bold"
+                                                            android:textColor="#fff"></TextView>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_width="189dp"
+                                                    android:layout_height="20dp"
+                                                    android:layout_marginTop="5dp">
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="Grassi:  "
+                                                            android:layout_marginLeft="5dp"
+                                                            android:textSize="14dp"
+                                                            android:textStyle="bold"
+                                                            android:textColor="#fff"></TextView>
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="0"
+                                                            android:id="@+id/grassi_alimento"
+                                                            android:layout_marginLeft="40dp"
+                                                            android:textSize="14dp"
+                                                            android:textStyle="bold"
+                                                            android:textColor="#fff"></TextView>
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text=" gr"
+                                                            android:textSize="14dp"
+                                                            android:textStyle="bold"
+                                                            android:textColor="#fff"></TextView>
+                                                </LinearLayout>
+                                        </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="350dp"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:gravity="center"
+                                            android:layout_marginTop="10dp"
+                                            >
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textColor="#fff"
+                                                    android:textStyle="bold"
+                                                    android:textSize="16dp"
+                                                    android:text="Inserisci la quantità in grammi:"
+                                                    ></TextView>
+                                                <EditText
+                                                    android:id="@+id/input_grammi"
+                                                    android:layout_width="300dp"
+                                                    android:layout_height="38dp"
+                                                    android:layout_marginLeft="10dp"
+                                                    android:background="@drawable/rounded_corner"
+                                                    android:gravity="center"
+                                                    android:text="Inserisci gr..."
+                                                    android:textColor="#D7FFFFFF"
+                                                    android:layout_marginRight="10dp"
+                                                    android:textSize="14dp"></EditText>
+                                        </LinearLayout>
+                                        </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/ll_Creacibo"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop= "20dp"
+                                    android:layout_width="345dp"
+                                    android:layout_height="250dp"
+                                    android:visibility="visible"
+                                    android:gravity="center_horizontal"
+                                    >
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+                                                <TextView
+                                                    android:layout_width="300dp"
+                                                    android:layout_height="wrap_content"
+                                                        android:textColor="#fff"
+                                                        android:textStyle="bold"
+                                                        android:text="Inserisci i valori nutrizionali per 100gr:"
+                                                        android:textSize="16dp"></TextView>
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="8dp">
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text= "Nome:"
+                                                            android:textSize="18dp"
+                                                            android:textColor="#fff"
+                                                            android:textStyle="bold"></TextView>
+                                                        <EditText
+                                                            android:id="@+id/nome_creazione"
+                                                            android:layout_marginLeft="48dp"
+                                                            android:layout_width="200dp"
+                                                            android:layout_height="30dp"
+                                                            android:textSize="16dp"
+                                                            android:gravity="center"
+                                                            android:textColor="#fff"
+                                                            android:textStyle="italic"
+                                                            android:text="Inserisci il nome..."
+                                                            android:background="@drawable/rounded_corner"></EditText>
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="8dp">
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text= "Kcal:"
+                                                            android:textSize="18dp"
+                                                            android:textColor="#fff"
+                                                            android:textStyle="bold"></TextView>
+                                                        <EditText
+                                                            android:id="@+id/calorie_creazione"
+                                                            android:layout_marginLeft="60dp"
+                                                            android:layout_width="200dp"
+                                                            android:layout_height="30dp"
+                                                            android:gravity="center"
+                                                            android:textSize="16dp"
+                                                            android:textStyle="italic"
+                                                            android:text="Inserisci calorie..."
+                                                            android:textColor="#fff"
+                                                            android:background="@drawable/rounded_corner"></EditText>
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="8dp">
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text= "Carboidrati:"
+                                                            android:textSize="18dp"
+                                                            android:textColor="#fff"
+                                                            android:textStyle="bold"></TextView>
+                                                        <EditText
+                                                            android:id="@+id/carbo_creazione"
+                                                            android:gravity="center"
+                                                            android:textSize="16dp"
+                                                            android:text="Inserisci carboidrati..."
+                                                            android:textColor="#fff"
+                                                            android:layout_marginLeft="6dp"
+                                                            android:layout_width="200dp"
+                                                            android:layout_height="30dp"
+                                                            android:background="@drawable/rounded_corner"></EditText>
+                                                </LinearLayout>
+
+                                                <LinearLayout
+
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="8dp">
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text= "Proteine:"
+                                                            android:textSize="18dp"
+                                                            android:textColor="#fff"
+                                                            android:textStyle="bold"></TextView>
+                                                        <EditText
+                                                            android:id="@+id/prote_creazione"
+                                                            android:gravity="center"
+                                                            android:textSize="16dp"
+                                                            android:text="Inserisci proteine..."
+                                                            android:layout_marginLeft="28dp"
+                                                            android:textColor="#fff"
+                                                            android:layout_width="200dp"
+                                                            android:layout_height="30dp"
+                                                            android:background="@drawable/rounded_corner"></EditText>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="8dp">
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text= "Grassi:"
+                                                            android:textSize="18dp"
+                                                            android:textColor="#fff"
+                                                            android:textStyle="bold"></TextView>
+                                                        <EditText
+                                                            android:id="@+id/grassi_creazione"
+                                                            android:gravity="center"
+                                                            android:textSize="16dp"
+                                                            android:text="Inserisci grassi..."
+                                                            android:layout_marginLeft="45dp"
+                                                            android:textColor="#fff"
+                                                            android:layout_width="200dp"
+                                                            android:layout_height="30dp"
+                                                            android:background="@drawable/rounded_corner"></EditText>
+                                                </LinearLayout>
+
+                                        </LinearLayout>
+                                </LinearLayout>
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="350dp"
+                            android:layout_height="50dp">
+                                <SearchView
+                                    android:id="@+id/SearchViewCibi"
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:iconifiedByDefault="false"
+                                    android:queryHint="Cerca..."
+                                    android:layout_marginLeft="25dp"
+                                    android:background="@drawable/rounded_corner"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginBottom="5dp"
+                                    android:title="Cerca..."
+                                    app:showAsAction="always"
+                                    app:actionViewClass="android.widget.SearchView" />
+
+                        </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    >
+                        <GridView
+                            android:background="@drawable/rounded_corner2"
+                            android:id="@+id/gridcibi"
+                            android:layout_width="match_parent"
+                            android:layout_height="245dp"
+                            android:layout_marginBottom="5dp"
+                            android:numColumns="3" />
+                </LinearLayout>
+                </LinearLayout>
+
+        </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

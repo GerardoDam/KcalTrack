@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_backgroundpupup"
+            >
+               <LinearLayout
+                   android:layout_centerHorizontal="true"
+                   android:layout_centerVertical="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:background="@drawable/rounded_corner2"
+                   >
+
+
+                       <ImageView
+                           android:layout_width="200dp"
+                           android:layout_height="280dp"
+                           android:layout_marginRight="32dp"
+                           android:layout_marginBottom="20dp"
+                           android:background="@mipmap/water"></ImageView>
+                       <TextView
+                           android:textStyle="bold"
+                           android:textColor="#fff"
+                           android:textSize="20dp"
+                           android:gravity="center"
+                           android:layout_width="350dp"
+                           android:layout_height="wrap_content"
+                           android:text="Inserisci la quantità di acqua che hai bevuto in MILLILITRI (ml) :">
+                       </TextView>
+                       <EditText
+                           android:id="@+id/acqua_bevuta"
+                            android:gravity="center"
+                           android:layout_width="300dp"
+                           android:layout_height="40dp"
+                           android:text="Inserisci ml..."
+                           android:textColor="#fff"
+                           android:background="@drawable/rounded_corner"
+                           android:textSize="18dp"
+                           android:layout_marginBottom="20dp"></EditText>
+                       <Button
+                           android:id="@+id/inserisci_acqua"
+                           android:layout_width="300dp"
+                           android:layout_height="wrap_content"
+                           android:layout_marginBottom="30dp"
+                           android:textSize="18dp"
+                           android:textColor="#fff"
+                           android:text="Inserisci acqua"
+                           android:background="@drawable/btn_rounded_corner"></Button>
+
+
+               </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

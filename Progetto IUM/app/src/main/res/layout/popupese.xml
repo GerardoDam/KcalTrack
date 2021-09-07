@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:menuxmlns="http://schemas.android.com/tools">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_backgroundpupup"
+            >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="3dp"
+                    >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:orientation="horizontal"
+
+                            >
+                                <Button
+                                    android:id="@+id/btn_Creaese"
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/btn_rounded_corner"
+                                    android:text="Crea esercizio"
+                                    android:layout_marginBottom="5dp"
+                                    android:textColor="#fff"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_alignParentBottom="true"
+                                    ></Button>
+                                <Button
+                                    android:id="@+id/btn_aggiungiInPopupEse"
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/btn_rounded_corner"
+                                    android:text="Aggiungi"
+                                    android:textColor="#fff"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="202dp"
+                                    android:layout_alignParentBottom="true"
+                                    ></Button>
+                                <Button
+                                    android:id="@+id/btn_InserisciinPopEse"
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/btn_rounded_corner"
+                                    android:text="inserisci"
+                                    android:textColor="#fff"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginLeft="202dp"
+                                    android:layout_alignParentBottom="true"
+                                    ></Button>
+                                // LAYOUT INSERIMENTO CIBOOOO  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                <LinearLayout
+
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop= "20dp"
+                                    android:layout_width="345dp"
+                                    android:background="@drawable/rounded_corner2"
+                                    android:layout_height="225dp"
+                                    android:orientation="vertical"
+                                    >
+
+                                        // layout visibile invisibile inserimento cibo @@@@@@@
+                                        <LinearLayout
+                                            android:id="@+id/ll_Inserimento_ese"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="horizontal">
+                                                        <ImageView
+                                                            android:id="@+id/icona_ese"
+                                                            android:layout_marginTop="25dp"
+                                                            android:layout_width="100dp"
+                                                            android:layout_height="100dp"
+                                                            android:layout_marginLeft="20dp"
+                                                            android:src="@drawable/camminata"></ImageView>
+
+                                                        <LinearLayout
+                                                            android:layout_width="200dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:orientation="vertical"
+                                                            android:layout_marginLeft="8dp"
+                                                            android:layout_marginTop="25dp">
+                                                                <TextView
+                                                                    android:id="@+id/nome_ese"
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:text="Mela"
+                                                                    android:layout_marginLeft="5dp"
+                                                                    android:textSize="18dp"
+                                                                    android:textStyle="bold"
+                                                                    android:textColor="#fff"></TextView>
+                                                                <TextView
+                                                                    android:layout_width="190dp"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:text="Consumo calorico medio per 10 minuti di esercizo:"
+                                                                    android:layout_marginLeft="5dp"
+                                                                    android:textSize="14dp"
+                                                                    android:textStyle="bold"
+                                                                    android:textColor="#fff"></TextView>
+                                                                <LinearLayout
+                                                                    android:layout_width="189dp"
+                                                                    android:layout_height="20dp"
+                                                                    android:layout_marginTop="5dp">
+                                                                        <TextView
+                                                                            android:layout_width="wrap_content"
+                                                                            android:layout_height="wrap_content"
+                                                                            android:text="Calorie bruciate:"
+                                                                            android:textSize="14dp"
+                                                                            android:textStyle="bold"
+                                                                            android:textColor="#fff"
+                                                                            android:layout_gravity="start"></TextView>
+                                                                        <TextView
+                                                                            android:id="@+id/kcal_esercizio"
+                                                                            android:layout_width="wrap_content"
+                                                                            android:layout_height="wrap_content"
+                                                                            android:text="300"
+                                                                            android:textSize="14dp"
+                                                                            android:textStyle="bold"
+                                                                            android:gravity="end"
+                                                                            android:layout_marginLeft="10dp"
+                                                                            android:textColor="#fff"></TextView>
+                                                                        <TextView
+                                                                            android:layout_width="wrap_content"
+                                                                            android:layout_height="wrap_content"
+                                                                            android:text=" kcal"
+                                                                            android:textSize="14dp"
+                                                                            android:textStyle="bold"
+                                                                            android:textColor="#fff"></TextView>
+                                                                </LinearLayout>
+
+                                                        </LinearLayout>
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_width="350dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="vertical"
+                                                    android:gravity="center"
+                                                    android:layout_marginTop="10dp"
+                                                    >
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:textColor="#fff"
+                                                            android:textStyle="bold"
+                                                            android:textSize="16dp"
+                                                            android:text="Inserisci i minuti di esercizio:"
+                                                            ></TextView>
+                                                        <EditText
+                                                            android:id="@+id/input_time"
+                                                            android:layout_width="300dp"
+                                                            android:layout_height="38dp"
+                                                            android:layout_marginLeft="10dp"
+                                                            android:background="@drawable/rounded_corner"
+                                                            android:gravity="center"
+                                                            android:text="Inserisci minuti..."
+                                                            android:textColor="#D7FFFFFF"
+                                                            android:layout_marginRight="10dp"
+                                                            android:textSize="14dp"></EditText>
+                                                </LinearLayout>
+                                        </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/ll_Creaese"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop= "20dp"
+                                    android:layout_width="345dp"
+                                    android:layout_height="250dp"
+                                    android:visibility="visible"
+                                    android:gravity="center_horizontal"
+                                    >
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+                                                <TextView
+                                                    android:layout_width="300dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:textColor="#fff"
+                                                    android:textStyle="bold"
+                                                    android:text="Inserisci le calorie che si bruciano in 10 minuti di esercizio:"
+                                                    android:textSize="18dp"></TextView>
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="vertical"
+                                                    android:layout_gravity="center"
+                                                    android:gravity="center"
+                                                    android:layout_marginTop="20dp">
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text= "Nome:"
+                                                            android:textSize="18dp"
+                                                            android:textColor="#fff"
+                                                            android:textStyle="bold"></TextView>
+                                                        <EditText
+                                                            android:id="@+id/input_nome_ese"
+                                                            android:layout_width="200dp"
+                                                            android:layout_height="30dp"
+                                                            android:textSize="16dp"
+                                                            android:gravity="center"
+                                                            android:textColor="#fff"
+                                                            android:textStyle="italic"
+                                                            android:text="Inserisci il nome..."
+                                                            android:background="@drawable/rounded_corner"></EditText>
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="20dp"
+                                                    android:orientation="vertical"
+                                                    android:gravity="center"
+                                                    android:layout_gravity="center"
+                                                    >
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text= "Kcal bruciate:"
+                                                            android:textSize="18dp"
+                                                            android:textColor="#fff"
+                                                            android:textStyle="bold"></TextView>
+                                                        <EditText
+                                                            android:id="@+id/input_calorie_ese"
+                                                            android:layout_width="200dp"
+                                                            android:layout_height="30dp"
+                                                            android:gravity="center"
+                                                            android:textSize="16dp"
+                                                            android:textStyle="italic"
+                                                            android:text="Inserisci calorie..."
+                                                            android:textColor="#fff"
+                                                            android:background="@drawable/rounded_corner"></EditText>
+                                                </LinearLayout>
+
+
+                                        </LinearLayout>
+                                </LinearLayout>
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="350dp"
+                            android:layout_height="50dp">
+                                <SearchView
+                                    android:id="@+id/SearchViewEse"
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:iconifiedByDefault="false"
+                                    android:queryHint="Cerca..."
+                                    android:layout_marginLeft="25dp"
+                                    android:background="@drawable/rounded_corner"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginBottom="5dp"
+                                    android:title="Cerca..."
+                                    app:showAsAction="always"
+                                    app:actionViewClass="android.widget.SearchView" />
+
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="350dp"
+                            android:layout_height="300dp"
+                            android:layout_gravity="center"
+                            >
+                                <GridView
+                                    android:background="@drawable/rounded_corner2"
+                                    android:id="@+id/gridEse"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="245dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:numColumns="3" />
+                        </LinearLayout>
+                </LinearLayout>
+
+        </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
